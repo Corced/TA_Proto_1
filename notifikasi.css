@@ -1,9 +1,251 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+  }
+  
+  body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    background-color: #ffffff80;
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  .notification-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #163b56;
+    color: white;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .logosmk {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    cursor: pointer;
+  position: absolute;
+  width: 5vw;
+  max-width: 83px;
+  height: auto;
+  left: 2vw;
+  top: 10px;
+  z-index: 100;
+  }
+  
+  #logosmk {
+    cursor: pointer;
+    position: absolute;
+    width: 5vw;
+    max-width: 83px;
+    height: auto;
+    left: 2vw;
+    top: 10px;
+    z-index: 100; /* Ensure it appears above other elements */
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    flex: 1;
+  }
+  
+  .background-svg {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .notification-list {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .notification-item {
+    background-color: #f0f0f0;
+    border-left: 5px solid #d9534f;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .sidebar-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
-.notifikasi{
-    background-image: url("resource/Logo/bckg.svg");
+
+.sidebar-popup.active {
+    opacity: 1;
+    pointer-events: auto;
 }
+
+.sidebar {
+    width: 250px;
+    max-width: 80%;
+    height: 100%;
+    background-color: #0D3B66;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-popup.active .sidebar {
+    transform: translateX(0);
+}
+
+.close-btn {
+    align-self: flex-end;
+    font-size: 1.75rem;
+    cursor: pointer;
+    color: white;
+}
+
+#title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #FF894E;
+}
+
+
+#btn-lanjut a, #btn-lanjut {
+    text-decoration: none;
+    background-color: #FF894E;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+#btn-kembali a, #btn-kembali {
+  text-decoration: none;
+  background-color: #183F55;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.logout {
+    background-color: #F25C54;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: auto;
+}
+
+@media (max-width: 480px) {
+  #logosmk {
+    width: 15vw;
+    left: 1rem;
+  }
+
+  #title {
+    font-size: 1.1rem;
+  }
+
+  .logout {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .menu button {
+    font-size: 0.95rem;
+  }
+}
+
+
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 1.2rem;
+    }
+  
+    .notification-item {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  
+    .logosmk {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+  }

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  function logoutUser() {
+  function NotifUser() {
     // Buat ngarahin ke page lain 
     window.location.href = "notifikasi.html";
   }

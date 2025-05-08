@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desktop - Application</title>
-    <link rel="stylesheet" href="notifikasi.css">
-    <script src="notifkasi.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desktop - Notifikasi</title>
+  <link rel="stylesheet" href="notifikasi.css" />
+  <script src="notifikasi.js"></script>
 </head>
 <body>
-    <div class="notifikasi">
-        <div>
-            <h2>As I live and Die no one will know who I am.</h2>
+    <!-- Logo placed outside the sidebar -->
+    <img src="resource/Logo/Logo SMK 2 Singosari.png" alt="logosmk" id="logosmk">
+
+    <div class="notification-container">
+        <div id="sidebar-popup" class="sidebar-popup">
+            <aside class="sidebar">
+                <span class="close-btn"><img src="resource/Logo/Logo SMK 2 Singosari.png" alt="logosmk" id="logosmk"></span>
+                <h2 id="title">PENERIMA TAMU</h2>
+                <ul class="menu">
+                    <li><button onclick="DashUser()"><h3>Dashboard</h3></button></li>
+                    <li><button><h3>Notifikasi</h3></button></li>
+                    <li><button><h3>Data Tamu</h3></button></li>
+                    <li><button><h3>Ulasan</h3></button></li>
+                </ul>
+                <button class="logout"><b>Keluar</b></button>
+            </aside>
         </div>
-        
+
+        <img src="resource/Logo/bckg.svg" class="background-svg" alt="Decorative stripes" />
+
+        <div class="notification-list">
+            <div class="notification-item">
+                Permintaan <strong>[NAMA PENGGUNA]</strong> ditolak oleh <strong>[NAMA GURU]</strong> pada 05/07/2025 pukul 02.00
+            </div>
+            <div class="notification-item">
+                Permintaan <strong>[NAMA PENGGUNA]</strong> ditolak oleh <strong>[NAMA GURU]</strong> pada 05/07/2025 pukul 02.00
+            </div>
+            <div class="notification-item">
+              Permintaan <strong>[NAMA PENGGUNA]</strong> ditolak oleh <strong>[NAMA GURU]</strong> pada 05/07/2025 pukul 02.00
+          </div>
+          <div class="notification-item">
+            Permintaan <strong>[NAMA PENGGUNA]</strong> ditolak oleh <strong>[NAMA GURU]</strong> pada 05/07/2025 pukul 02.00
+        </div>
+        </div>
     </div>
-     
-      
+    <div class="footer">
+    <button id="btn-lanjut"><a href="datapengajuan.html">Lanjut</a></button>
+    <button id="btn-kembali"><a href="datapengajuan.html">Kembali</a></button>
+    </div>
+
 </body>
 </html>
+<!--- Aku mw dapat 2m loh ya ges (makasih mas/mbak :laughcatemoji)-->

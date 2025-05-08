@@ -1,0 +1,120 @@
+/* filepath: c:\Time Wasting\TA_Proto_1\datapengajuan.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #163b56;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-button {
+  background-color: #f97316;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  padding: 2rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #163b56;
+  color: white;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+#btn-lanjut a, #btn-lanjut {
+    text-decoration: none;
+    background-color: #FF894E;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+#btn-kembali a, #btn-kembali {
+  text-decoration: none;
+  background-color: #183F55;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
