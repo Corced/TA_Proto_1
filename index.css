@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("resource/Font-poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: #183F55;
+}
+
+#logosmk {
+  cursor: pointer;
+  position: absolute;
+  width: 5vw;
+  max-width: 83px;
+  height: auto;
+  left: 2vw;
+  top: 10px;
+  z-index: 100;
+}
+
+.sidebar-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-popup.show .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar {
+  width: 250px;
+  max-width: 80%;
+  height: 100%;
+  background-color: #0D3B66;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-popup.active .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+}
+
+#title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+
+.menu button:hover {
+  background-color: #FF894E;
+}
+
+.logout {
+  background-color: #F25C54;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: auto;
+}
+
+
+
+.title {
+  padding: 1rem;
+  margin-left: 7rem;
+  padding-top: 0.5rem;
+  color: #FFFFFF;
+}
+
+.content {
+  margin: 0;
+  padding: 1.25rem;
+  color: #FFFFFF;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #f97316;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 30px;
+  min-width: 260px;
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+.card-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-label {
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsive Media Queries */
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 1.25rem;
+    margin-top: 4rem;
+  }
+
+  .title {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    padding: 1rem;
+  }
+
+  .card {
+    min-width: 90%;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #logosmk {
+    width: 15vw;
+    left: 1rem;
+  }
+
+  #title {
+    font-size: 1.1rem;
+  }
+
+  .logout {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .menu button {
+    font-size: 0.95rem;
+  }
+}
+
+.active-visits-section {
+  background-color: #183F55;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.section-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.visit-card {
+  background-color: white;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}

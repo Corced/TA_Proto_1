@@ -1,0 +1,16 @@
+{
+  "name": "stims-addicted-programmer-files-should-be-put-here",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Corced",
+  "license": "ISC",
+  "description": "Tugas Akhir Desktop 25",
+  "devDependencies": {
+    "electron": "^36.0.1"
+  }
+}
