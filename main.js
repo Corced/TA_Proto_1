@@ -19,7 +19,7 @@ function createWindow() {
   });
 
   // Load your frontend entry point
-  mainWindow.loadFile('index.html'); // or loadURL('http://localhost:3000') for React/Vite/etc.
+  mainWindow.loadFile('frontend/index.html'); // or loadURL('http://localhost:3000') for React/Vite/etc.
 
   // Only show the window once it's ready to avoid flicker
   mainWindow.once('ready-to-show', () => {
