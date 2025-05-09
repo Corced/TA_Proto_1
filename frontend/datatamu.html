@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tamu</title>
+    <link rel="stylesheet" href="datatamu.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <img src="resource/Logo/Logo SMK 2 Singosari.png" alt="Logosmk" class="logo">
+            <div class="header-circles">
+    <div class="circle blue"></div>
+    <div class="circle blue"></div>
+    <div class="circle orange"></div>
+    <div class="circle orange"></div>
+</div>
+            <h1>DATA TAMU</h1>
+
+
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Tamu</th>
+                    <th>Nama</th>
+                    <th>Instansi</th>
+                    <th>Keperluan</th>
+                    <th>Tanggal Kunjungan</th>
+                    <th>Jam Masuk</th>
+                    <th>Jam Keluar</th>
+                    <th>Petugas Penerima</th>
+                </tr>
+            </thead>
+            <tbody id="data-tamu-body">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <button id="export-button">Ekspor Data</button>
+    </div>
+    <script src="datatamu.js"></script>
+</body>
+</html>
