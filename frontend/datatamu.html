@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="datatamu.css">
 </head>
 <body>
+
+    <div id="sidebar-popup" class="sidebar-popup">
+      <aside class="sidebar">
+        <span class="close-btn" id="closeSidebar">&times;</span>
+        <h2 id="title">PENERIMA TAMU</h2>
+        <ul class="menu">
+          <li><button onclick="DashUser()"><h3>Dashboard</h3></button></li>
+          <li><button onclick="NotifUser()"><h3>Notifikasi</h3></button></li>
+          <li><button onclick="Datatamu()"><h3>Data Tamu</h3></button></li>
+          <li><button><h3>Ulasan</h3></button></li>
+        </ul>
+        <button class="logout"><b>Keluar</b></button>
+      </aside>
+    </div>
+
     <div class="container">
-        <header>
-            
-            <img src="resource/Logo/Logo SMK 2 Singosari.png" alt="Logosmk" class="logo">
-            <div class="header-circles">
-    <div class="circle blue"></div>
-    <div class="circle blue"></div>
-    <div class="circle orange"></div>
-    <div class="circle orange"></div>
-</div>
-            <h1>DATA TAMU</h1>
+<header>
+    <img src="resource/Logo/Logo SMK 2 Singosari.png" alt="Logosmk" id="logosmk" class="logo">
+  <div class="header-center">
+    <img src="resource/Logo/circleblue.svg" class="circle-svg" alt="circle blue">
+    <img src="resource/Logo/circleorange.svg" class="circle-svg" alt="circle orange">
+    <span class="data-tamu-title">DATA TAMU</span>
+    <img src="resource/Logo/circleorange.svg" class="circle-svg" alt="circle orange">
+    <img src="resource/Logo/circleblue.svg" class="circle-svg" alt="circle blue">
+  </div>
 
-
-        </header>
+  
+</header>
         <table>
             <thead>
                 <tr>
@@ -41,5 +55,6 @@
         <button id="export-button">Ekspor Data</button>
     </div>
     <script src="datatamu.js"></script>
+    <script src="redirect.js"></script>
 </body>
 </html>

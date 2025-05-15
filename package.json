@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . webpack serve --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,10 +12,35 @@
   "license": "ISC",
   "description": "Tugas Akhir Desktop 25",
   "devDependencies": {
-    "electron": "^36.0.1"
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "electron": "^36.0.1",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
-    "flatpickr": "^4.6.13",
-    "fullcalendar": "^6.1.17"
+    "copy-webpack-plugin": "^13.0.0",
+    "dotenv": "^16.5.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "hamburger-react": "^2.5.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0",
+    "socket.io-client": "^4.8.1",
+    "axios": "^1.9.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.15.6",
+    "qrcode": "^1.5.4",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.2"
   }
 }

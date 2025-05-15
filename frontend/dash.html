@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop - Application</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dash.css">
 </head>
 <body>
     <img src="resource/Logo/Logo SMK 2 Singosari.png" alt="logosmk" id="logosmk">
@@ -16,9 +16,9 @@
             <h2 id="title">PENERIMA TAMU</h2>
             
             <ul class="menu">
-                <li><button><h3>Dashboard</h3></button></li>
+                <li><button onclick="DashUser()"><h3>Dashboard</h3></button></li>
                 <li><button onclick="NotifUser()"><h3>Notifikasi</h3></button></li>
-                <li><button><h3>Data Tamu</h3></button></li>
+                <li><button onclick="Datatamu()"><h3>Data Tamu</h3></button></li>
                 <li><button><h3>Ulasan</h3></button></li>
             </ul>
             <button class="logout"><b>Keluar</b></button>
@@ -53,6 +53,7 @@
         <div class="visit-card"></div>
       </div>
     </article>
-    <script src="index.js"></script>
+    <script src="dash.js"></script>
+    <script src="redirect.js"></script>
 </body>
 </html>

@@ -20,7 +20,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-function DashUser() {
-  // Buat ngarahin ke page lain 
-  window.location.href = "index.html";
-}
