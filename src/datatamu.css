@@ -51,12 +51,12 @@ h1 {
 }
 
 .circle.blue {
-   background-image: url("resource/logo/circleblue.svg");
+   background-image: url("/public/resource/logo/circleblue.svg");
    background-repeat: no-repeat;
 }
 
 .circle.orange {
-    background-image: url("resource/logo/circleorange.svg");
+    background-image: url("/public/resource/logo/circleorange.svg");
     background-repeat: no-repeat;
 }
 
